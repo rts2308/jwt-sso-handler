@@ -13,7 +13,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 10000;
 const FRESHDESK_DOMAIN = process.env.FRESHDESK_DOMAIN; // e.g. support.medicaldefensesociety.com
-const PRIVATE_KEY_PATH = "./private.key";
+const PRIVATE_KEY_PATH = "/etc/secrets/private.key";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
