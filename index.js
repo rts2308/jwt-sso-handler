@@ -17,7 +17,7 @@ const PRIVATE_KEY_PATH = "/etc/secrets/private.key";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const privateKey = fs.readFileSync(path.join(__dirname, PRIVATE_KEY_PATH), "utf8");
+const privateKey = fs.readFileSync(PRIVATE_KEY_PATH, "utf8");
 
 app.get("/freshdesk-login", (req, res) => {
   const { email, name } = req.query;
